@@ -16,6 +16,7 @@ public class Resume {
 
   @Id
   @GeneratedValue(generator = "resume_id_seq",strategy = GenerationType.SEQUENCE)
+  @SequenceGenerator(name = "resume_id_generator", sequenceName ="resume_id_seq", allocationSize = 10)
   @Column(name = "id")
   private Integer id;
 
